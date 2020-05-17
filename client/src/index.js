@@ -1,13 +1,19 @@
+/*  React  */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { BrowserRouter as Router } from "react-router-dom";
+
+/*  Import the Bootstrap CSS  */
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+/*  Import App JS  */
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <App />
-  </React.StrictMode>,
+  </Router>,
   document.getElementById('root')
 );
 
