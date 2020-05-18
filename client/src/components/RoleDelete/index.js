@@ -12,7 +12,7 @@ import Button from 'react-bootstrap/Button';
 class RoleDelete extends Component {
 
     state = {
-        rolesCollection: []
+        rolesCollection: {}
     };
 
     componentDidMount() {
@@ -50,7 +50,6 @@ class RoleDelete extends Component {
             });
     }
 
-    
     render() {
         return (
             <div className="container mt-3">
@@ -60,12 +59,10 @@ class RoleDelete extends Component {
                             <th>Role</th>
                             <th>ID</th>
                             <th>Del</th>
-
-
                     </thead>
                     <tbody>
                             {this.state.rolesCollection.map((item, index) => (
-                                <tr key={item._id}>
+                                <tr key={index}>
                                     <td>{index + 1}</td>
                                     <td>{item.role_name}</td>
                                     <td>{item._id}</td>
@@ -80,11 +77,8 @@ class RoleDelete extends Component {
                     </tbody>
                 </Table>
             </div>
-
         )
-
     }
-
 }
 
 /*  Export RoleDelete  */

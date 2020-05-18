@@ -42,7 +42,7 @@ class HomeTabs extends React.Component {
                     <Tab className="text-black" eventKey="Delete" title="Delete Role">
                         <Row>
                             <Col>
-                                <RoleDelete />
+                                {/* <RoleDelete /> */}
                             </Col>
                         </Row>
                     </Tab>
